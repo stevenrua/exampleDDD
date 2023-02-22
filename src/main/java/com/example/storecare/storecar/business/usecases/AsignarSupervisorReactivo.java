@@ -28,7 +28,7 @@ public class AsignarSupervisorReactivo extends USeCaseForCommand<AsignarSupervis
                 .collectList()
                 .flatMapIterable(events->{
                     SupervisorGeneral supervisorGeneral = SupervisorGeneral
-                            .from(SupervisorGeneralID.of(command.getSupervisorId()), events);
+                            .from(SupervisorGeneralID.of(command.getSupervisorGenetalId()), events);
                     supervisorGeneral.asignarSupervisor(
                             TableroTareasID.of(command.getTableroTareasId()),
                             SupervisorID.of(command.getSupervisorId()),

@@ -35,7 +35,7 @@ class CrearSupervisorGeneralReactivoTest {
     @Test
     void successfullScenario(){
         String SUPERVISORGENERALID = "test-supervisorgeneral-id";
-        String NOMBRE = "supervisorgrrtr";
+        String NOMBRE = "supervisorgeneral";
         String AREA = "test-area";
 
         CrearSupervisorGeneral crearSupervisorGeneralCommand = new CrearSupervisorGeneral(
